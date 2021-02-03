@@ -62,7 +62,7 @@ Merging of `patent_inventor.csv` and `inventor.csv` is done on the basis of `inv
 
 In this final script, `merged_disambig_apps.csv` and `patents_inventors_merged.csv` are merged. There was some trouble in merging these two data files because of being very large, therefore I extracted the rows which had common `patent_id` in both datasets. It reduced the row count and it become possible to process them further. 
 
-Then, I merged `patent_id` column with `lastname` column. Since there were many duplicates in `patent_id`  it become possible to identify them and merge them. Otherwise, algorithm in `merge()` of R was not able to process with too many duplicates. 
+Then, I merged `patent_id` column with `lastname` column. Since there were many duplicates in `patent_id`  it was not possible to process them. Algorithm of `merge()` of R was not able to process with too many duplicates and crashing.
 
 The merged result of these 2 columns is named as `ID` column. In the last step, `merged_disambig_apps.csv` and `patents_inventors_merged.csv` were merged according to `ID` column. 
 
