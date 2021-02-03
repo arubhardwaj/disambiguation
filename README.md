@@ -24,8 +24,8 @@ In this file, I made changes in the file name. As mentioned in the code, first I
 
 After this, I followed all the steps described in [`gen_grandtedpatents.do`](https://github.com/arubhardwaj/disambiguation/blob/main/STATA/gen_grantedpatents.do) file. 
 
-- I dropped all the rows from `patent_id` which were blank.
-- I identified all the duplicates and removed it. In this file there were only 2 entries with duplicates: "D251712" and "NONE".
+- Dropped all the rows from `patent_id` which were blank.
+- Identified all the duplicates and removed it. In this file there were only 2 entries with duplicates: "D251712" and "NONE".
 - Then I cross checked if there are anymore duplicates left? Fortunately, I found none.
 
 ## all_inventors.R
@@ -36,7 +36,7 @@ This file was to check if there is any need to make changes. I find, that all th
 
 This script deals with `disambig_apps.csv` and `application_data.csv` (processed from all_results.R and all_applications.R). 
 
-- The first column name in these files was missing and it was because of processing the files and exporting from R to CSV. It created a columns of serial number. Those columns are deleted from both the datasets. 
+- The first column name in these files was missing and it was because of processing the files and exporting from R to CSV. It created a columns of serial number. Those columns are dropped from both the datasets. 
 - `application_number` in `application_data.csv` was not identified as numeric but in `disambig_apps.csv` it was shown into numeric type. Which is changed into numeric type in `application_data.csv` file.
 - Removed rows with NAs from `application_number` column in `application_data.csv`.
 - Deleted `V1` column in `application_data.csv` (as mentioned above, it was serial number).
