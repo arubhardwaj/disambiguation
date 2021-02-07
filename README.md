@@ -60,13 +60,13 @@ Merging of `patent_inventor.csv` and `inventor.csv` is done on the basis of `inv
 
 ## Final_Merge.R
 
-In this final script, `merged_disambig_apps.csv` and `patents_inventors_merged.csv` are merged. There was some trouble in merging these two data files because of being very large, therefore I extracted the rows which had common `patent_id` in both datasets. It reduced the row count and it become possible to process them further. 
+In this final script, `merged_disambig_apps.csv` and `patents_inventors_merged.csv` are merged. 
 
-Then, I merged `patent_id` column with `lastname` column. Since there were many duplicates in `patent_id`  it was not possible to process them. Algorithm of `merge()` of R was not able to process with too many duplicates and crashing.
+Then, I coombined `application_number` column with `firstname`, `middlename` and `lastname` column. 
 
-The merged result of these 2 columns is named as `ID` column. In the last step, `merged_disambig_apps.csv` and `patents_inventors_merged.csv` were merged according to `ID` column. 
+The combined result of these 3 columns is named as `ID` column. In the last step, `merged_disambig_apps.csv` and `patents_inventors_merged.csv` were merged according to the `ID` column. 
 
-Merged file is exported as `all_merged.RDs`. File become super large after the merge, so it was difficult to export in CSV. However, R's data file exported it in compressed `RDs` format. 
+Merged file is exported as `last_merged.RDs`. File become super large after the merge, so it was difficult to export in CSV. However, R's data file exported it in compressed `RDs` format. 
 
 
 
