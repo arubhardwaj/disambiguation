@@ -33,7 +33,7 @@ mode(app_inv$application_number)
 mode(merged_disambig_apps$application_number)
 
 merged_disambig_apps$ID <- paste(merged_disambig_apps$application_number, merged_disambig_apps$firstname, merged_disambig_apps$middlename, merged_disambig_apps$lastname )
-app_inv$ID <- paste(app_inv$application_number, app_inv$firstname, app_inv$lastname )
+app_inv$ID <- paste(app_inv$application_number, app_inv$firstname, app_inv$lastname)
 
 last_merge <- merge(merged_disambig_apps, app_inv, by ='ID')
 
