@@ -1,7 +1,5 @@
 # Read Me
 
-Below are the description about `.R` script each file.
-
 ## all_results.R
 
 In this file, I processed the data from `all_results.txt` file. As mentioned in [`import_disambig.do`](https://github.com/arubhardwaj/disambiguation/blob/main/STATA/import_disambig.do) file, I renamed the columns:
