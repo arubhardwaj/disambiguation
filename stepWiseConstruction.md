@@ -14,7 +14,8 @@ In this file there is also one more column named V7, which was not taken in the 
 
 In this file there are 494830 unique for the inventor disambiguated. 
 
-This file was exported and saved as disambig_apps.csv. 
+This file was exported and saved as disambig_apps.csv. Due to RAM issues, I had to export data in CSV, RDS or RDA format after each step.
+
 
 # Step-2
 
